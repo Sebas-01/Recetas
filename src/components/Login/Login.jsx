@@ -1,4 +1,4 @@
-import './Login.css'
+import styles from './Login.module.css'
 import { useRef, useState } from 'react'
 import { usuarios } from '../../hooks/usuarios';
 import { useNavigate } from 'react-router-dom';
@@ -29,8 +29,8 @@ export const Login = () => {
             console.log('logeo exitoso');
             loginUsernameRef.current.value='';
             loginPasswordRef.current.value='';
-            navigate('/home')
-            //aqui poner el codigo para redirigirse a una interfaz grafica distinta
+            window.location.href='Home.html';
+           
         }
         else{
             setLoginMessage('inicio de sesion fallido')
@@ -71,23 +71,23 @@ export const Login = () => {
     return (
     <>
         {/* login */}
-        <div className={`wrapper${action}`}>
+        <div className={`${styles.wrapper} ${action ? styles.active : ''}`}>
 
-            <div className='form-box login'>
+            <div className={`${styles.formBox} ${styles.login}`}>
                 <form onSubmit={logeo}>
 
                     <h1>Inicio de sesion</h1> 
 
-                    <div className='input-box'>
+                    <div className={styles.inputBox}>
                         <input type="text" placeholder='User name' required ref={loginUsernameRef}/>
                         <i className="bi bi-person-fill"></i>
                     </div>        
-                    <div className='input-box'>
+                    <div className={styles.inputBox}>
                         <input type="password" placeholder='Password' required ref={loginPasswordRef}/>
                         <i className="bi bi-person-fill-lock"></i>
                     </div> 
 
-                    <div className='remember'>
+                    <div className={styles.remember}>
                         <label> <input type="checkbox" /> Remember me</label>
                         <a href="#">Forgot password?</a>
                     </div>
@@ -95,7 +95,7 @@ export const Login = () => {
                     <button type="submit">Iniciar sesion</button>
                     {loginMessage && <p>{loginMessage}</p>}
 
-                    <div className='register-link'>
+                    <div className={styles.registerLink}>
                         <p>
                             No tienes una cuenta? 
                             <a href="#" onClick={registroLink}>Registrame</a>
@@ -108,27 +108,27 @@ export const Login = () => {
          {/* registro */}
       
 
-            <div className='form-box registro'>
+            <div className={`${styles.formBox} ${styles.registro}`}>
                 <form onSubmit={registrarse}>
 
                     <h1>Registro</h1> 
 
-                    <div className='input-box'>
+                    <div className={styles.inputBox}>
                         <input type="text" placeholder='User name' required ref={registroUsernameRef}/>
                         <i className="bi bi-person-fill"></i>
                     </div>        
 
-                    <div className='input-box'>
+                    <div className={styles.inputBox}>
                         <input type="email" placeholder='Email' required ref={registroEmailRef}/>
                         <i className="bi bi-envelope-at-fill"></i>
                     </div> 
 
-                    <div className='input-box'>
+                    <div className={styles.inputBox}>
                         <input type="password" placeholder='Password' required ref={registroPasswordRef}/>
                         <i className="bi bi-person-fill-lock"></i>
                     </div> 
 
-                    <div className='remember'>
+                    <div className={styles.remember}>
                         <label> <input type="checkbox" /> Aceptas terminos y condiciones</label>
                         
                     </div>
@@ -136,7 +136,7 @@ export const Login = () => {
                     <button type="submit">Registrarme</button>
                     {registerMessage && <p>{registerMessage}</p>}
 
-                    <div className='register-link'>
+                    <div className={styles.registerLink}>
                         <p>
                             Ya tienes una cuenta? 
                             <a href="#" onClick={loginLink}>Iniciar </a>

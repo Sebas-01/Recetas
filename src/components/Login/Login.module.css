@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merienda:wght@300..900&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+body {
     font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
@@ -16,65 +16,67 @@ body{
     background-size: cover;
     background-position: center center;
 }
-
-.wrapper{
+  
+.wrapper {
     position: relative;
     display: flex;
     width: 420px;
     height: 450px;
-    background:transparent ;
+    background: transparent;
     border: 2px solid white;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px black ;
+    box-shadow: 0 0 10px black;
     color: white;
     border-radius: 10px;
     align-items: center;
     overflow: hidden;
-    transition: heigth .2s ease;
+    transition: height 0.2s ease;
 }
-
-.wrapper.active{
+  
+.wrapper.active {
     height: 520px;
 }
-
-.wrapper .form-box{
+  
+.formBox {
     width: 100%;
     padding: 40px;
 }
-.wrapper .form-box.login{
-    transition: translate .18s ease;
-    translate: 0px
+  
+.login {
+    transition: translate 0.18s ease;
+    translate: 0px;
 }
-
-.wrapper.active .form-box.login{
+  
+.active .login {
     transition: none;
     translate: -400px;
-}
+  }
 
-.wrapper .form-box.registro{
+.registro {
     position: absolute;
     transition: none;
     translate: 400px;
-}
-
-.wrapper.active .form-box.registro{
-    transition: translate .18s ease;
+  }
+  
+.active .registro {
+    transition: translate 0.18s ease;
     translate: 0px;
 }
-form h1{
+  
+form h1 {
     font-family: "Poetsen One", sans-serif;
     font-size: 36px;
     text-align: center;
 }
-
-form .input-box{
+  
+.inputBox {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
- 
-.input-box input{
+  
+.inputBox input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -84,41 +86,41 @@ form .input-box{
     color: white;
     padding: 20px 45px 20px 20px;
 }
-
-.input-box input::placeholder{
-   color: white;
+  
+.inputBox input::placeholder {
+    color: white;
 }
-
-.input-box i{
+  
+.inputBox i {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 25px;
 }
-
-form .remember{
+  
+.remember {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
     margin: -15px 0 15px;
 }
-.remember label input{
+  
+.remember label input {
     accent-color: white;
     margin-right: 4px;
 }
-
-.remember a{
+  
+.remember a {
     color: white;
     text-decoration: none;
 }
-
-.remember a:hover{
+  
+.remember a:hover {
     color: blue;
-    
 }
-
-form button{
+  
+button {
     width: 100%;
     height: 45px;
     background: white;
@@ -131,27 +133,25 @@ form button{
     color: black;
     font-weight: 700;
 }
-
-.wrapper button:hover{
+  
+.wrapper button:hover {
     transition: all 0.2s ease-out;
     color: white;
     background: #B99470;
 }
-
-
-
-form .register-link {
+  
+.registerLink {
     text-align: center;
     font-size: 15px;
-    margin: 20px 0 15px ;
+    margin: 20px 0 15px;
 }
-
-.register-link p a{
+  
+.registerLink p a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
-
-.register-link p a:hover{
+  
+.registerLink p a:hover {
     color: blue;
 }
