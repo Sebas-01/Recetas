@@ -1,12 +1,12 @@
 import styles from './Login.module.css'
 import { useRef, useState } from 'react'
 import { usuarios } from '../../hooks/usuarios';
-import { useNavigate } from 'react-router-dom';
+
 
 export const Login = () => {
 
     const {login,registro} = usuarios();
-    const navigate = useNavigate();
+    
 
    const [action, setAction] = useState('');
    const [loginMessage, setLoginMessage] = useState('');

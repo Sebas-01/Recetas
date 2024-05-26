@@ -8,7 +8,6 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-    background: url('./src/imagenes/background-login.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 body::before {
@@ -55,7 +54,10 @@ body::before {
     font-family: "Merienda", cursive;
     color: aliceblue;
 }
-  
+.populares h1{
+    padding: 0px 0px 20px 0px;
+   
+}
 .carousel {
     width: 60%; /* Ajusta el ancho del carrusel */
     margin: 0 auto; /* Centra el carrusel horizontalmente */
@@ -76,16 +78,266 @@ body::before {
     text-align: center;
     padding-top: 10px;
 }
-.postres h3{
+h3{
     font-size: 50px;
     color: white;
     text-align: center;
     padding-top: 50px;
 }
-.recetas-postres{
-    padding: 45px;
+.btn{
+    background: #5F6F52;
+    border: 0;
+}
+.btn:hover{
+    background: #481E14;
+}
+.card-postres{
+    background: rgba(255, 255, 255, 0.774);
+    padding: 15px;
+    border-radius: 25px;
     
 }
+.card-postres h5{
+    padding: 15px 0px 5px 0px;
+}
+
+
+.card-img-top{
+    border-radius: 15px;
+    width: 100%;
+    height: 180px; /* Mantener proporción */
+    max-width: 600px; /* Opcional: limite de tamaño */
+}
+
+
+.recetas-postres{
+    padding: 45px;
+}
 .postres{
-    background-color: #ff00aa25;
+    background-color: #ff00aa17;
+    
+}
+
+/* Platos tipicos */
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.intrucciones{
+    background: #5F6F52;
+    border-radius: 20px;
+}
+.card {
+    width: 300px;
+    height: 250px;
+    background:transparent;
+    border-radius: 20px ;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+  
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Ajusta la imagen para cubrir todo el contenedor */
+    object-position: center;
+    border-radius:20px ;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+.platillos{
+    padding: 45px;
+}
+.textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+}
+  
+.textBox > .text {
+    font-weight: bold;
+}
+  
+.textBox > .head {
+    font-size: 20px;
+}
+  
+.textBox > .price {
+    font-size: 17px;
+}
+  
+.textBox > span {
+    font-size: 12px;
+    color: lightgrey;
+}
+  
+.card:hover > .textBox {
+    opacity: 1;
+}
+  
+.card:hover > img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+}
+  
+@keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+.card:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+
+/* Bebidas */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.flip-card-back p{
+    text-align: center;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+}
+.flip-card-back a:hover{
+    /* background: transparent; */
+    background:#5F6F52;
+    border-radius: 20px;
+    
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    border-radius: 1rem;
+}
+  
+.flip-card-front.card1{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+.flip-card-front.card1{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card1{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card2{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card3{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card4{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card5{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card6{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card7{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+.flip-card-front.card8{
+    color: white;
+    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    background-size: cover;
+}
+
+  
+.flip-card-back {
+    background: #C3E2C2;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+
+.bebidas-contenedor{
+    
+    padding-top: 50px;
 }
