@@ -2,6 +2,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const receta = urlParams.get('receta');
 
+
+
 // Datos de ejemplo para las recetas
 const recetas = {
     // POSTRES
@@ -312,53 +314,117 @@ const recetas = {
         video: "https://www.youtube.com/embed/OeCUsncUPfo?si=vp3_-acw0KO_9-id"
     },
     // BEBIDAS
-    margarita: {
-        titulo: "Margarita",
+    Limonada: {
+        titulo: "Limonada",
         ingredientes: [
-            "Tequila",
-            "Triple sec",
-            "Jugo de limón",
-            "Sal"
+            "4 limones",
+            "200g de azúcar",
+            "1 litro de agua",
+            "Rodajas de limón y hojas de menta para decorar",
+            "Hielo"
         ],
         pasos: [
-            "Mezclar tequila, triple sec y jugo de limón.",
-            "Servir en un vaso con el borde salado.",
-            "Añadir hielo al gusto."
+            "Lava bien los limones.",
+            "Corta los limones por la mitad y exprime el jugo en un recipiente, asegurándote de eliminar las semillas. ",
+            "En una cacerola pequeña, calienta 200ml de agua y añade el azúcar.",
+            "Remueve constantemente hasta que el azúcar se disuelva completamente. Deja enfriar.",
+            "En una jarra grande, combina el jugo de limón, el jarabe de azúcar enfriado y el resto del agua (800ml).",
+            "Mezcla bien para combinar todos los ingredientes."
         ],
-        video: "https://www.youtube.com/embed/lDK9QqIzhwk"
+        video: "https://www.youtube.com/embed/8Rd9HV8iweU?si=nJRnSnCn34eNIWXB"
     },
-    margarita: {
-        titulo: "Margarita",
+    Agua_Jamaica: {
+        titulo: "Agua de Jamaica",
         ingredientes: [
-            "Tequila",
-            "Triple sec",
-            "Jugo de limón",
-            "Sal"
+            "100g de flores de jamaica (hibisco)",
+            "1 litro de agua",
+            "Azúcar al gusto",
+            "Rodajas de limón o naranja para decorar",
+            "Hielo"
         ],
         pasos: [
-            "Mezclar tequila, triple sec y jugo de limón.",
-            "Servir en un vaso con el borde salado.",
-            "Añadir hielo al gusto."
+            "En una cacerola grande, lleva el agua a ebullición.",
+            "Añade las flores de jamaica y retira del fuego.",
+            "Deja reposar durante unos 10 minutos para que las flores suelten su color y sabor.",
+            "Cuela la infusión para retirar las flores de jamaica y descártalas.",
+            "Deja enfriar la infusión a temperatura ambiente.",
+            "Añade azúcar al gusto y mezcla bien hasta que se disuelva completamente."
         ],
-        video: "https://www.youtube.com/embed/lDK9QqIzhwk"
+        video: "https://www.youtube.com/embed/OY8v3BHn_Io?si=FM6cRviovv1yne22"
     },
-    margarita: {
+    Margarita: {
         titulo: "Margarita",
         ingredientes: [
-            "Tequila",
-            "Triple sec",
-            "Jugo de limón",
-            "Sal"
+            "50ml de tequila",
+            "25ml de licor de naranja (como Cointreau)",
+            "25ml de jugo de lima recién exprimido",
+            "Sal para el borde del vaso",
+            "Rodaja de lima para decorar",
+            "Hielo"
         ],
         pasos: [
-            "Mezclar tequila, triple sec y jugo de limón.",
-            "Servir en un vaso con el borde salado.",
-            "Añadir hielo al gusto."
+            
+            "Toma un vaso para margarita o un vaso bajo y frota el borde con una rodaja de lima.",
+            "Coloca sal en un plato pequeño.",
+            "Voltea el vaso y presiona suavemente el borde del vaso en la sal para cubrirlo. Esto se llama escarchear el vaso.",
+            "Llena una coctelera con hielo.",
+            "Añade 50 ml de tequila, 25 ml de licor de naranja y 25 ml de jugo de lima fresco en la coctelera.",
+            "Cierra la coctelera y agita vigorosamente durante unos 15-20 segundos para mezclar bien y enfriar los ingredientes.",
+            "Llena el vaso escarchado con hielo (opcional, depende de tu preferencia).",
+            "Vierte la mezcla de la coctelera en el vaso, colando el hielo.",
+            "Decora con una rodaja de lima en el borde del vaso."
         ],
-        video: "https://www.youtube.com/embed/lDK9QqIzhwk"
+        video: "https://www.youtube.com/embed/ACitFSt_rCA?si=Wq0WQX8TEtuAc2ma"
     },
-    margarita: {
-        titulo: "Margarita",
+
+    Limonada_Lavanda_Miel: {
+        titulo: "Limonada de Lavanda y Miel",
+        ingredientes: [
+            "4 limones",
+            "1/4 taza de miel",
+            "1 litro de agua",
+            "2 cucharadas de flores de lavanda secas (o 4-5 ramitas frescas)",
+            "Rodajas de limón y flores de lavanda para decorar",
+            "Hielo"
+        ],
+        pasos: [
+            "Exprime el jugo de los limones y colócalo en una jarra grande.",
+            "Agrega la miel y revuelve hasta que se disuelva completamente.",
+            "En una olla pequeña, hierve el agua y añade las flores de lavanda. Deja que hierva durante 5 minutos, luego retira del fuego y deja reposar durante otros 5 minutos.",
+            "Cuela el agua de lavanda sobre el jarabe de limón y miel en la jarra. Mezcla bien.",
+            "Refrigera la limonada hasta que esté bien fría.",
+            "Sirve en vasos con hielo y decora con rodajas de limón y flores de lavanda. ¡Disfruta de esta delicada y aromática bebida!"
+        ],
+        video: "https://www.youtube.com/embed/ZzwT4Ib2s_M?si=U8QIqCChIKJC-cvo"
+    },
+    Mocktail_Sandía_Menta: {
+        titulo: "Mocktail de Sandía y Menta",
+        ingredientes: [
+            "2 tazas de sandía cortada en cubos",
+            "1/4 taza de hojas de menta fresca",
+            "2 cucharadas de jugo de limón fresco",
+            "1 cucharada de jarabe de agave o miel",
+            "Agua con gas",
+            "Rodajas de limón y hojas de menta para decorar",
+            "Hielo"
+        ],
+        pasos: [
+
+            "Coloca los cubos de sandía en una licuadora.",
+            "Añade las hojas de menta fresca a la licuadora con la sandía.",
+            "Vierte el jugo de lima fresco en la licuadora.",
+            "Añade la miel o jarabe de agave si prefieres un mocktail más dulce.",
+            "Licua todos los ingredientes hasta obtener una mezcla suave y homogénea.",
+            "Si prefieres un mocktail sin pulpa, cuela la mezcla a través de un colador de malla fina en una jarra.",
+            "Añade el agua con gas a la mezcla de sandía y menta en la jarra. Mezcla suavemente para combinar.",
+            "Llena los vasos con hielo.",
+            "Vierte el mocktail de sandía y menta sobre el hielo.",
+            "Decora cada vaso con una rodaja de lima y una ramita de menta fresca."
+        ],
+        video: "https://www.youtube.com/embed/iU0kU5r_Elg?si=XI0dWTx-tnAvR8Ok"
+    },
+    Smoothie: {
+        titulo: "Smoothie de Bayas y Coco",
         ingredientes: [
             "Tequila",
             "Triple sec",
@@ -366,11 +432,57 @@ const recetas = {
             "Sal"
         ],
         pasos: [
-            "Mezclar tequila, triple sec y jugo de limón.",
-            "Servir en un vaso con el borde salado.",
-            "Añadir hielo al gusto."
+            "En una licuadora, mezcla las bayas congeladas, el plátano, la leche de coco, el yogur griego y la miel hasta obtener una mezcla suave y cremosa.",
+            "Vierte el smoothie en vasos y decora con coco rallado y bayas frescas. ¡Sirve frío y disfruta de esta explosión de sabor!"
         ],
-        video: "https://www.youtube.com/embed/lDK9QqIzhwk"
+        video: "https://www.youtube.com/embed/J7AJgt8bAJQ?si=zPr-_FZzAJhr_hbs"
+    },
+    Agua_coco: {
+        titulo: "Agua de coco",
+        ingredientes: [
+            "500ml de agua de coco natural",
+            "250ml de agua",
+            "2 cucharadas de azúcar (opcional)",
+            "Rodajas de lima o limón para decorar",
+            "Hielo"
+        ],
+        pasos: [
+            "Si usas cocos frescos, abre los cocos con cuidado y vierte el agua de coco en una jarra. Si usas agua de coco embotellada, simplemente vierte el agua de coco en una jarra.",
+            "Exprime el jugo de una lima y añádelo al agua de coco en la jarra. Mezcla bien para combinar.",
+            "Añade miel o jarabe de agave al gusto y mezcla bien hasta que se disuelva completamente.",
+            "Llena los vasos con hielo.",
+            "Vierte el agua de coco sobre el hielo.",
+            "Decora cada vaso con una rodaja de lima y unas hojas de menta fresca."
+        ],
+        video: "https://www.youtube.com/embed/ktMpfvzaH-Y?si=QORRhHf1UBb7rLnB"
+    },
+    Te_helado: {
+        titulo: "Smoothie de Bayas y Coco",
+        ingredientes: [
+            "2 bolsitas de té negro",
+            "2 duraznos maduros",
+            "1 litro de agua",
+            "Azúcar al gusto",
+            "Rodajas de durazno para decorar",
+            "Hielo"
+        ],
+        pasos: [
+        
+            "Lleva el agua a ebullición en una cacerola.",
+            "Una vez que el agua esté hirviendo, retírala del fuego y añade las bolsitas de té negro.",
+            "Deja reposar las bolsitas de té en el agua caliente durante unos 5-10 minutos, dependiendo de lo fuerte que prefieras el té.",
+            "Retira las bolsitas de té y deja que el té se enfríe a temperatura ambiente.",
+            "Lava los duraznos, pélalos y retira el hueso.",
+            "Coloca los duraznos en una licuadora y haz un puré suave. Si prefieres un té más claro, puedes colar el puré para eliminar la pulpa.",
+            "En una jarra grande, combina el té enfriado y el puré de durazno.",
+            "Añade azúcar al gusto y mezcla bien hasta que el azúcar se disuelva completamente. Puedes ajustar la cantidad de azúcar según tu preferencia.",
+            "Coloca la jarra en el refrigerador y deja enfriar durante al menos 1-2 horas para que el té helado esté bien frío.",
+            "Llena los vasos con hielo.",
+            "Vierte el té helado de durazno sobre el hielo.",
+            "Decora cada vaso con rodajas de durazno frescas.",
+            "Sirve inmediatamente y disfruta de este refrescante té helado de durazno."
+        ],
+        video: "https://www.youtube.com/embed/JH2MY2dRveU?si=1j2F5c6wNF5IS8aJ"
     },
 
 };
@@ -395,7 +507,26 @@ const mostrarDetallesReceta = () => {
             <div class="detalle-video">
                 <h3>Video Tutorial</h3>
                 <iframe src="${detalleReceta.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+                    <div class="wheel"></div>
+                        <div class="hamster">
+                            <div class="hamster__body">
+                                <div class="hamster__head">
+                                    <div class="hamster__ear"></div>
+                                    <div class="hamster__eye"></div>
+                                    <div class="hamster__nose"></div>
+                                </div>
+                                <div class="hamster__limb hamster__limb--fr"></div>
+                                <div class="hamster__limb hamster__limb--fl"></div>
+                                <div class="hamster__limb hamster__limb--br"></div>
+                                <div class="hamster__limb hamster__limb--bl"></div>
+                                <div class="hamster__tail"></div>
+                            </div>
+                        </div>
+                    <div class="spoke"></div>
+                </div>
             </div>
+            
             `;
            
     } else {
@@ -405,3 +536,4 @@ const mostrarDetallesReceta = () => {
 
 // Ejecutar la función para mostrar los detalles de la receta
 mostrarDetallesReceta();
+

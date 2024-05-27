@@ -4,7 +4,6 @@
 }
 body {
     margin: 0;
-    padding: 0;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
@@ -25,9 +24,14 @@ body::before {
 
 /* barra de navegacion */
 .navbar{
-    padding: 5px;
-    background-color:#a9b388a8 ;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.178);
 }
 
 .navbar-collapse{
@@ -37,13 +41,13 @@ body::before {
 
 .nav-link{
     font-size: 25px;
-    color: black;
+    color:white;
     font-family: "Kalam", cursive; 
 }
 .nav-link:hover{
     font-size: 25px;
     color: white;
-    background:#5F6F52 ;
+    background:#9B3922 ;
     font-family: "Kalam", cursive; 
     border-radius: 5%;
 }
@@ -55,8 +59,7 @@ body::before {
     color: aliceblue;
 }
 .populares h1{
-    padding: 0px 0px 20px 0px;
-   
+    padding: 50px 0px 20px 0px;
 }
 .carousel {
     width: 60%; /* Ajusta el ancho del carrusel */
@@ -92,7 +95,7 @@ h3{
     background: #481E14;
 }
 .card-postres{
-    background: rgba(255, 255, 255, 0.774);
+    background:#fefae0;
     padding: 15px;
     border-radius: 25px;
     
@@ -113,16 +116,17 @@ h3{
 .recetas-postres{
     padding: 45px;
 }
-.postres{
-    background-color: #ff00aa17;
-    
-}
 
 /* Platos tipicos */
-a {
+a{
     text-decoration: none;
     padding: 10px;
-    color: white;
+    color:black;
+}
+.titulo-populares{
+    text-decoration: none;
+    padding: 10px;
+    color:white;
 }
 
 .intrucciones{
@@ -271,73 +275,139 @@ a {
 }
   
 .flip-card-front.card1{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #FFFF80;
+    background: url(./src/imagenes/limonada-casera.jpg) no-repeat center center;
     background-size: cover;
 }
-.flip-card-front.card1{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
-    background-size: cover;
-}
-
-.flip-card-front.card1{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
-    background-size: cover;
+.flip-card-front p{
+    background: rgba(0, 0, 0, 0.548);
+    
 }
 
 .flip-card-front.card2{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #FF204E;
+    background: url(./src/imagenes/Agua-de-Jamaica-.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .flip-card-front.card3{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #FBFFDC;
+    background: url(./src/imagenes/margarita.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .flip-card-front.card4{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #E384FF;
+    background: url(./src/imagenes/limonada-lavanda.avif) no-repeat center center;
     background-size: cover;
 }
 
 .flip-card-front.card5{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #FC2947;
+    background: url(./src/imagenes/mocktail.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .flip-card-front.card6{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #A555EC;
+    background: url(./src/imagenes/Smoothie.webp) no-repeat center center;
     background-size: cover;
 }
 
 .flip-card-front.card7{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #F3EEEA;
+    background: url(./src/imagenes/agua-de-coco.webp) no-repeat center center;
     background-size: cover;
 }
 
 .flip-card-front.card8{
-    color: white;
-    background: url(./src/imagenes/coctel-bebidas.png) no-repeat center center;
+    color: #FF6D28;
+    background: url(./src/imagenes/te-helado-durazno.jpg) no-repeat center center;
     background-size: cover;
 }
 
+
   
-.flip-card-back {
-    background: #C3E2C2;
+.flip-card-back.card1 {
+    background: #FFFF80;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card2 {
+    background: #A0153E;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card3 {
+    background: #FBFFDC;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card4 {
+    background: #E384FF;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card5 {
+    background: #FC2947;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card6 {
+    background: #A555EC;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card7 {
+    background: #F3EEEA;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+.flip-card-back.card8 {
+    background: #FF6D28;
     color: black;
     transform: rotateY(180deg);
     padding: 5px;
 }
 
-.bebidas-contenedor{
-    
+.footer{
+    padding-top: 80px;
+    color: white;
+    background: rgba(0, 0, 0, 0.404);
+}
+.bebidas-contenedor{ 
     padding-top: 50px;
+}
+.redes p{
+    font-size: 20px;
+}
+.redes h2{
+    text-align: center;
+
+}
+.redes i{
+    color: white;
+    font-size: 50px;
+}
+.redes .bi-facebook:hover{ 
+    color:  #362FD9;
+}
+.redes .bi-instagram:hover{ 
+    color:  rgba(204,35,102,1);
+}
+.redes .bi-linkedin:hover{ 
+    color:  #80B3FF;
+}
+
+.footer .derechos-autor{
+    padding: 50PX;
+    font-size: 12px;
+    text-align: center;
 }

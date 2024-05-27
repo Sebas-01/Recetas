@@ -89,7 +89,7 @@ export const Login = () => {
 
                     <div className={styles.remember}>
                         <label> <input type="checkbox" /> Remember me</label>
-                        <a href="#">Forgot password?</a>
+                        
                     </div>
                     
                     <button type="submit">Iniciar sesion</button>
@@ -129,7 +129,7 @@ export const Login = () => {
                     </div> 
 
                     <div className={styles.remember}>
-                        <label> <input type="checkbox" /> Aceptas terminos y condiciones</label>
+                        <label> <input type="checkbox" required/> Aceptas terminos y condiciones</label>
                         
                     </div>
                     

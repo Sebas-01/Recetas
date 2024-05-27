@@ -26,24 +26,13 @@
             <a class="navbar-brand" href="#"><img src="./src/imagenes/icono.png" width="50" alt="logo-pagina"></a>
             <ul class="navbar-nav d-flex justify-content-center aling-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Postres</a>
+                <a class="nav-link" href="#postres">Postres</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Platos tipicos</a>
+                <a class="nav-link" href="#platos-tipicos">Platos tipicos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Bebidas</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link " href="#bebidas">Bebidas</a>
               </li>
             </ul>
           </div>
@@ -61,45 +50,38 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <img src="./src/imagenes/background-login.jpg" class="d-block w-100" alt="...">
+              <a href="Receta.html?receta=Mousse_chocolate"><img src="./src/imagenes/mousse-chocolate.jpg" class="d-block w-100" ></a>
               <div class="carousel-caption d-none d-md-block">
-                <h5>Postres</h5>
+                <h5><a href="#postres" class="titulo-populares">Postres</a></h5>
                 <p>Los postres son el toque final perfecto para cualquier comida, endulzando tanto el paladar como el corazón.</p>
               </div>
             </div>
           </div>
           <div class="container">
             <div class="carousel-item">
-              <img src="./src/imagenes/icono.png" class="d-block w-100" alt="...">
+              <a href=""><img src="./src/imagenes/Paella-española.jpg" class="d-block w-100" ></a>
               <div class="carousel-caption d-none d-md-block">
-                <h5>Platos tipicos</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5><a href="Receta.html?receta=Paella_espanola" class="titulo-populares" >Platos tipicos</a></h5>
+                <p>Los platos típicos de cada región son una ventana a su cultura, historia y tradiciones, reflejando la diversidad y riqueza gastronómica que define a su gente.</p>
               </div>
             </div>
           </div>
           <div class="container">
             <div class="carousel-item">
-              <img src="./src/imagenes/background-login.jpg" class="d-block w-100" alt="...">
+              <a href="Receta.html?receta=Margarita"><img src="./src/imagenes/margarita.jpg" class="d-block w-100" ></a>
               <div class="carousel-caption d-none d-md-block">
-                <h5>Bebidas</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5><a href="Bebidas" class="titulo-populares">Bebidas</a></h5>
+                <p>Las bebidas refrescantes son el alivio perfecto en días calurosos, combinando sabores frescos y naturales que revitalizan y energizan el cuerpo y el espíritu.</p>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#recetas-populares" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#recetas-populares" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+        
       </div>
     </section >
 
     <!-- Seccion postres -->
-    <section class="postres">
+    <section class="postres" id="postres">
       <h3>Postres</h3>
       <div class="container text-center recetas-postres ">
           <div class="row">
@@ -108,7 +90,6 @@
                 <img src="./src/imagenes/brownie-chocolate.png" class="card-img-top" alt="brownies de chocolate">
                 <div class="card-body">
                   <h5 class="card-title">Brownies de chocolate</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="Receta.html?receta=brownies" class="btn btn-primary">Preparar</a>
                 </div>
               </div>
@@ -119,7 +100,6 @@
                 <img src="./src/imagenes/tarta-de-manzana.jpg" class="card-img-top" alt="Tarta-de-manzana">
                 <div class="card-body">
                   <h5 class="card-title">Tarta de manzana</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="Receta.html?receta=tarta_manzana" class="btn btn-primary">Preparar</a>
                 </div>
               </div>
@@ -130,7 +110,6 @@
                 <img src="./src/imagenes/cheescake-fresa.jpg" class="card-img-top" alt="Cheesecake-de-fresa">
                 <div class="card-body">
                   <h5 class="card-title">Cheesecake de fresa</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="Receta.html?receta=Cheesecake_fresa" class="btn btn-primary">Preparar</a>
                 </div>
               </div>
@@ -141,7 +120,6 @@
                 <img src="./src/imagenes/crepes con nutella.png" class="card-img-top" alt="Crepes-con-nutella">
                 <div class="card-body">
                   <h5 class="card-title">Crepes con nutella</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="Receta.html?receta=Crepes_nutella" class="btn btn-primary">Preparar</a>
                 </div>
               </div>
@@ -152,7 +130,6 @@
                 <img src="./src/imagenes/Helado-vainilla.jpg" class="card-img-top" alt="Helado de vainilla">
                 <div class="card-body">
                   <h5 class="card-title">Helado de vainilla casero</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="Receta.html?receta=Helado_vainilla" class="btn btn-primary">Preparar</a>
                 </div>
               </div>
@@ -163,7 +140,6 @@
                 <img src="./src/imagenes/mousse-chocolate.jpg" class="card-img-top" alt="Mousse-de-chocolate">
                 <div class="card-body">
                   <h5 class="card-title">Mousse de chocolate</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="Receta.html?receta=Mousse_chocolate" class="btn btn-primary">Preparar</a>
                 </div>
               </div>
@@ -174,7 +150,7 @@
       
     </section>
 <!-- platillos tipicos -->
-    <section class="platos-tipicos">
+    <section class="platos-tipicos" id="platos-tipicos">
       <h3>Platos tipicos</h3>
       <div class="container platillos">
         <div class="row">
@@ -197,7 +173,7 @@
               <div class="textBox">
                 <p class="text head">Pad Thai tailandés</p>
                 <span>Comienza ahora mismo</span>
-                <p class="text intrucciones"><a href="">Ir a preparar</a></p>
+                <p class="text intrucciones"><a href="Receta.html?receta=Pad_Thai">Ir a preparar</a></p>
               </div>
             </div>
           </div>
@@ -253,7 +229,7 @@
       </div>
     </section>
 <!-- bebidas -->
-    <Section class="bebidas">
+    <Section class="bebidas" id="bebidas">
       <h3>Bebidas</h3>
       <div class="container bebidas-contenedor">
         <div class="row">
@@ -261,12 +237,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card1">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Limonada </p>
+                    <p>Sin licor</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="Receta.html?receta=margarita">Preparame</a></p>
+                  <div class="flip-card-back card1">
+                      <p class="title">Limonada</p>
+                      <p><a href="Receta.html?receta=Limonada">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -276,12 +252,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card2">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Agua de Jamaica </p>
+                    <p>Sin licor</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card2">
+                      <p class="title">Agua de Jamaica</p>
+                      <p><a href="Receta.html?receta=Agua_Jamaica">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -291,12 +267,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card3">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Margarita</p>
+                    <p>Con alcohol</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card3">
+                      <p class="title">Margarita</p>
+                      <p><a href="Receta.html?receta=Margarita">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -306,12 +282,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card4">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Limonada de Lavanda y Miel </p>
+                    <p>sin alcohol</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card4">
+                      <p class="title">Limonada de Lavanda y Miel</p>
+                      <p><a href="Receta.html?receta=Limonada_Lavanda_Miel">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -321,12 +297,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card5">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Mocktail de Sandía y Menta </p>
+                    <p>sin alcohol</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card5">
+                      <p class="title">Mocktail de Sandía y Menta</p>
+                      <p><a href="Receta.html?receta=Mocktail_Sandía_Menta">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -336,12 +312,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card6">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Smoothie de Bayas y Coco </p>
+                    <p>sin alcohol</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card6">
+                      <p class="title">Smoothie de Bayas y Coco</p>
+                      <p><a href="Receta.html?receta=Smoothie">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -351,12 +327,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card7">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Agua de coco </p>
+                    <p>Sin alcohol</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card7">
+                      <p class="title">Agua de coco</p>
+                      <p><a href="Receta.html?receta=Agua_coco">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -366,12 +342,12 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front card8">
-                    <p class="title" > Nombre del coctel </p>
-                    <p>hola</p>
+                    <p class="title" > Té helado de durazno </p>
+                    <p>Sin alchool</p>
                   </div>
-                  <div class="flip-card-back">
-                      <p class="title">Nombre coctel</p>
-                      <p><a href="#">Preparame</a></p>
+                  <div class="flip-card-back card8">
+                      <p class="title">Té helado de durazno</p>
+                      <p><a href="Receta.html?receta=Te_helado">Preparame</a></p>
                   </div>
               </div>
             </div>
@@ -380,6 +356,33 @@
 
       </div>
     </Section>
+
+
+    <footer class="footer d-flex flex-column aling-items-center justify-content-center">
+      <section class="redes">
+        <p class="footer-texto text-center">Cocinar no es solo preparar comida, es crear momentos y recuerdos inolvidables. <br> Cocinar es una forma de amor que se saborea con cada bocado.</p>
+            <div class="iconos-redes d-flex flex-wrap aling-items-center justify-content-center">
+              <a href="https://www.instagram.com/s_e_b_a_s.21/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/sebastian.perez.3576/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://acortar.link/pTHpZv" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+      </section>
+      <div class="derechos-autor">Las imágenes y videos presentados en esta página web no son de nuestra propiedad y han sido obtenidos de diversas fuentes en internet. Todos los derechos sobre estas imágenes y videos pertenecen a sus respectivos propietarios.
+         <br> Si usted es el propietario de alguno de estos contenidos y considera que no deberían estar en este sitio, por favor contáctenos a <a href=" mailto:sebastian.perez404@pascualbravo.edu.co">
+          <button type="button"> 
+            Email
+            <i class="bi bi-envelope-plus-fill"></i>
+          </button>
+        </a> para que podamos revisar su caso y, si es necesario, eliminar el contenido de forma inmediata.
+      </div>
+      <div class="derechos-autor">Creado por Sebastian (2024) &#169;</div>
+    </footer>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzK1rKSpkHj4m5Rj0iC2KGapN8Sk9FlFujN9Tktp2GYj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

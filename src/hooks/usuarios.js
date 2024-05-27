@@ -6,7 +6,7 @@ export const usuarios = () => {
     {
         username:'sebastian',
         password: '123456',
-        email:'sebastian@gmail.com'
+        email:'sebas10perez11@gmail.com'
     }
   ]);
 
